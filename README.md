@@ -1,6 +1,8 @@
 # Braccio-OnshapeDigitalTwin
 Implementation of an Onshape digital twin for the Arduino Braccio++ robot arm. We can use the Onshape interface to place checkpoints that define the path of the end effector as well as the gripper configuration allowing pick and place operations.
 
+![assembly](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/assembly.gif)
+
 ![pickandplace](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/pickandplace.gif)
 
 ## How this works
@@ -44,12 +46,18 @@ We can now upload the code to the Arduino and run it. By default, the code waits
 ## Using the program
 
 We can insert upto 10 checkpoints, while inserting the checkpoint you can set the following configuration parameters:
-* configuration: The number for which order the checkpoint appears in the sequence
-* gripper configuration: Whether the gripper is closed or open
-* gripper delay: Time(in seconds) to wait at each checkpoint
+* **configuration**: The number for which order the checkpoint appears in the sequence
+* **gripper configuration**: Whether the gripper is closed or open
+* **gripper delay**: Time(in seconds) to wait at each checkpoint
 
 ![gripper](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/gripper.gif)
 
 Click generate when done.The checkpoint can be moved around and arranged as required within the green dome representing the range of motion.
 
 ![dome](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/dome.gif)
+
+Once the path is set, the enter button on the Braccio board can be pressed to execute the path.
+
+## This program was part of a submission for Onshape undergraduate poster competition in 2022
+
+![OnshapePoster]](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/OnshapePoster.jpg)
