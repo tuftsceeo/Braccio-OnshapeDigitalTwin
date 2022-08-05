@@ -58,6 +58,8 @@ Click generate when done.The checkpoint can be moved around and arranged as requ
 
 Once the path is set, the enter button on the Braccio board can be pressed to execute the path.
 
-## This program was part of a submission for Onshape undergraduate poster competition in 2022
+## Research
+
+**This program was part of a submission for Onshape undergraduate poster competition in 2022**
 
 ![OnshapePoster](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/OnshapePoster.jpg)
