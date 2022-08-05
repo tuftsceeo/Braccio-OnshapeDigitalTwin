@@ -3,6 +3,10 @@ Implementation of an Onshape digital twin for the Arduino Braccio++ robot arm. W
 
 ![pickandplace](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/pickandplace.gif)
 
+## How this works
+The code works by making https GET requests to the onshape API to fetch information about each checkpoint position and configuration. It calculates the angles required to get to that position and then sets the robot arm to those joint angles. If monitoring is enabled it makes POST requests to set mate values for the onshape model to represent the physical state.
+
+
 ## Instructions
 ### Install Dependencies
 This code requires the following arduino libraries to be installed:
@@ -33,3 +37,19 @@ Open the BraccioOnshape code in ArduinoIDE which is the main code. We need to ch
 
 ### Add SSL certificate
 Follow the [instructions on the arduino website](https://support.arduino.cc/hc/en-us/articles/360016119219-How-to-add-certificates-to-Wifi-Nina-Wifi-101-Modules-) to add Onshape's SSL certificate to your Braccio's nano RP2040.
+
+### Run code
+We can now upload the code to the Arduino and run it. By default, the code waits for you to connect to the serial monitor so you must be open the serial monitor to run it. This can be changed in the code if not required but it provides useful information while sending the requests.
+
+## Using the program
+
+We can insert upto 10 checkpoints, while inserting the checkpoint you can set the following configuration parameters:
+* configuration: The number for which order the checkpoint appears in the sequence
+* gripper configuration: Whether the gripper is closed or open
+* gripper delay: Time(in seconds) to wait at each checkpoint
+
+![gripper](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/gripper.gif)
+
+Click generate when done.The checkpoint can be moved around and arranged as required within the green dome representing the range of motion.
+
+![dome](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/dome.gif)
