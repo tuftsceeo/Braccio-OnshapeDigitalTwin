@@ -62,4 +62,4 @@ Once the path is set, the enter button on the Braccio board can be pressed to ex
 
 **This program was part of a submission for Onshape undergraduate poster competition in 2022**
 
-![OnshapePoster](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/OnshapePoster.jpg)
+![OnshapePoster](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/Onshape Poster.jpg)
