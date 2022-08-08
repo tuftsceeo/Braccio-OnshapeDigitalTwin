@@ -13,10 +13,10 @@ auto elbow = Braccio.get(4);
 auto shoulder = Braccio.get(5);
 auto base = Braccio.get(6);
 
-//Use a copy of the onshape document https://rogers.onshape.com/documents/9a453d9e3d5cb8f5b9b51eba/w/0248d727b4bba4c0097425b7/e/e23e520ed8ef3f8834a241ca to fill urlBase,document,element, and workspace IDs
+//Use a copy of the onshape document https://cad.onshape.com/documents/9a453d9e3d5cb8f5b9b51eba/w/0248d727b4bba4c0097425b7/e/e23e520ed8ef3f8834a241ca to fill urlBase,document,element, and workspace IDs
 
 //Define parameters for your robot here -----------------------------------------------
-const String urlBase = "https://rogers.onshape.com";
+const String urlBase = "https://cad.onshape.com";
 const String documentID = "9a453d9e3d5cb8f5b9b51eba";
 const String workspaceID = "0248d727b4bba4c0097425b7";
 const String elementID = "e23e520ed8ef3f8834a241ca";

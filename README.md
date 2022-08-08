@@ -1,6 +1,6 @@
 # Braccio-OnshapeDigitalTwin
 Implementation of an Onshape digital twin for the Arduino Braccio++ robot arm. We can use the Onshape interface to place checkpoints that define the path of the end effector as well as the gripper configuration allowing pick and place operations.
-Accomanying Onshape document: [Click here to follow](https://cad.onshape.com/documents/9a453d9e3d5cb8f5b9b51eba/w/0248d727b4bba4c0097425b7/e/e23e520ed8ef3f8834a241ca)
+Accompanying Onshape document: [Click here to follow](https://cad.onshape.com/documents/9a453d9e3d5cb8f5b9b51eba/w/0248d727b4bba4c0097425b7/e/e23e520ed8ef3f8834a241ca)
 
 ![pickandplace](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/pickandplace.gif)s
 
