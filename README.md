@@ -57,6 +57,9 @@ Click generate when done.The checkpoint can be moved around and arranged as requ
 
 Once the path is set, the enter button on the Braccio board can be pressed to execute the path.
 
+## Adding Context
+To better help guide the placement of checkpoints in space, we can use the onshape mobile app to perform a LIDAR scan from supported devices and import into the onshape document. Manually line it up using the robot as a reference.
+
 ## Research
 
 **This program was part of a submission for Onshape undergraduate poster competition in 2022**
