@@ -1,7 +1,8 @@
 # Braccio-OnshapeDigitalTwin
 Implementation of an Onshape digital twin for the Arduino Braccio++ robot arm. We can use the Onshape interface to place checkpoints that define the path of the end effector as well as the gripper configuration allowing pick and place operations.
+Accomanying Onshape document: [Click here to follow](https://cad.onshape.com/documents/9a453d9e3d5cb8f5b9b51eba/w/0248d727b4bba4c0097425b7/e/e23e520ed8ef3f8834a241ca)
 
-![pickandplace](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/pickandplace.gif)
+![pickandplace](https://github.com/tuftsceeo/Braccio-OnshapeDigitalTwin/blob/main/img/pickandplace.gif)s
 
 ## How this works
 The code works by making https GET requests to the onshape API to fetch information about each checkpoint position and configuration. It calculates the angles required to get to that position and then sets the robot arm to those joint angles. If monitoring is enabled it makes POST requests to set mate values for the onshape model to represent the physical state.
@@ -17,7 +18,7 @@ This code requires the following arduino libraries to be installed:
 
 ArduinoJson and Braccio++ can be installed from the arduino library manager whereas BraccioIK and Braccio++ can be installed from the linked github repositories. They can be downloaded as a .zip file and use Arduino IDE to select the option "Add .zip libary" under sketch - include library.
 ### Setup Onshape
-Open the linked onshape document for this assembly and make a copy to edit. Then obtain your key to the onshape API [here](https://dev-portal.onshape.com/keys) (write this down for later).
+Open the [linked onshape document](https://cad.onshape.com/documents/9a453d9e3d5cb8f5b9b51eba/w/0248d727b4bba4c0097425b7/e/e23e520ed8ef3f8834a241ca) for this assembly and make a copy to edit. Then obtain your key to the onshape API [here](https://dev-portal.onshape.com/keys) (write this down for later).
 ### Setup Arduino code
 once assembled, connect your Arduino Braccio++ robot arm to your computer and run the ObtainMinMax code in main. Open the serial monitor and you will see the value of each joint (the arm should be disengaged and free to move around). We need to get the physical min and max angle possible at each joint so move the joint to its minimum and maximum position repeating this for each joint.Write it down for later. This will look something like this: 
 
